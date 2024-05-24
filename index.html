@@ -1,218 +1,85 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
 
-<meta charset="UTF-8">
-
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Aquí pueden ir otras metaetiquetas, como metadatos del documento -->
     <title>Tu Título</title>
-    <!-- Aquí puedes vincular tus archivos CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación del archivo CSS -->
+
+	
+
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos para Flyers</title>
     <link rel="stylesheet" href="styles.css">
-
-.container {
-    width: 100%;
-}
-	@media screen and (max-width: 768px) {
-    /* Estilos específicos para pantallas más pequeñas */
-    .container {
-        padding: 20px; /* Por ejemplo, agregar un relleno para que sea más legible en pantallas pequeñas */
-    }
-}
-
-
-
-	
-
-	
-<script>
-    function toggleFaq(id) {
-        var answer = document.getElementById(id);
-        if (answer.style.display === 'none') {
-            answer.style.display = 'block';
-        } else {
-            answer.style.display = 'none';
-        }
-    }
-</script>
-
-<style>
-    .faq-answer {
-        display: none;
-    }
-</style>
-	<!-- TÍTULO PÁGINA-->
-	
-<title> Recursos para Flyers </title>
 </head>
+<body>
+    <header>
+        <h1>IndigoPixel Productions</h1>
+    </header>
 
-				<!--VIDEO EN LOOP-->
-<video autoplay muted loop style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1; opacity: 0.7;">
-  <source src="VIDEOFONDOTEST.mp4" type="video/mp4">
-  Tu navegador no soporta videos HTML5.
-</video>
+    <main class="container">
+        <p>Bienvenido a IndigoPixel Productions, tu fuente definitiva de información teórica y práctica para el desarrollo de flyers publicitarios. Explora nuestros contenidos cuidadosamente elaborados, donde encontrarás conceptos fundamentales, características clave y elementos gráficos esenciales para crear afiches que destaquen y cautiven a tu audiencia. Desde principiantes hasta profesionales del diseño, aquí encontrarás todo lo que necesitas para llevar tus ideas publicitarias al siguiente nivel.</p>
 
+        <h2>Características Destacadas</h2>
+        <ul>
+            <li>Plantillas profesionales y personalizables para todos los estilos y necesidades</li> 
+            <li>Guías detalladas sobre principios de diseño y composición para maximizar el impacto visual.</li>
+            <li>Biblioteca de imágenes de alta calidad y elementos gráficos para enriquecer tus diseños.</li>
+            <li>Consejos expertos sobre tipografía, colores y técnicas de edición para perfeccionar cada detalle.</li>
+            <li>Compatibilidad con las últimas tendencias y estándares del diseño publicitario.</li>
+        </ul>
 
+        <h2>Preguntas frecuentes</h2>
+        <div onclick="toggleFaq('faq1')">¿De qué tamaño deberían ser los flyers?</div>
+        <div id="faq1" class="faq-answer">
+            <p>En general, los flyers suelen tener un tamaño de 28 x 22 cm, que es el tamaño de una hoja de papel estándar. Pero también puedes elegir un formato más grande, como 28 x 43 cm, o uno más pequeño de 21.5 x 14 cm. Te recomendamos elegir el tamaño en función de la cantidad de texto en tu diseño y de cómo estés planeando distribuirlo.</p>
+        </div>
 
+        <div onclick="toggleFaq('faq2')">¿Qué se necesita para que un flyer sea efectivo?</div>
+        <div id="faq2" class="faq-answer">
+            <ul>
+                <li>Un titular llamativo</li>
+                <li>Un mensaje claro</li>
+                <li>Una fuente adecuada</li>
+                <li>Cierta jerarquía visual</li>
+                <li>Imágenes y espacio en blanco</li>
+                <li>Un llamado a la acción</li>
+            </ul>
+            <p>Y, sobre todas las cosas, debería tener un público objetivo definido. De esa forma, si lo ven las personas correctas, tu mensaje se va a difundir mucho más rápido y de forma orgánica.</p>
+        </div>
 
+        <div onclick="toggleFaq('faq3')">¿Qué debería incluir un flyer?</div>
+        <div id="faq3" class="faq-answer">
+            <p>Asegúrate de usar los colores y el logo de tu marca, imágenes e ilustraciones que llamen la atención, títulos atractivos y algo de texto para explicar tu mensaje. Puedes agregar información de contacto, como tu sitio web, correo electrónico y teléfono, o información importante, como fecha y hora de un evento.</p>
+        </div>
 
+        <p>Gracias por dar el primer paso para mejorar tus habilidades en el diseño de flyers publicitarios con IndigoPixel Productions. Nuestro compromiso es ser tu aliado en cada paso del proceso creativo. Estamos aquí para inspirarte, proporcionarte las herramientas adecuadas y ayudarte a alcanzar tus metas. ¡Empieza a explorar y descubre cómo podemos hacer que tus ideas cobren vida!</p>
 
+        <p>¡Bienvenido a un mundo de creatividad ilimitada con IndigoPixel Productions!</p>
+    </main>
 
+    <footer id="footer">
+        <h3 onclick="cargarContenido('politica_privacidad.html')">Política de privacidad</h3>
+        <h3 onclick="cargarContenido('terminos_servicio.html')">Términos de servicio</h3>
+        <h3 onclick="cargarContenido('contacto.html')">Contacto</h3>
+        <h3 onclick="cargarContenido('soporte.html')">Soporte</h3>
+        <h3 onclick="cargarContenido('sobre_nosotros.html')">Sobre Nosotros</h3>
+        <div id="contenido"></div>
+        <p>Derechos del autor © 2024. Todos los derechos reservados.</p>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-				<!--PRESENTACIÓN-->
-
-	<center>	
-<u>
-		<h1>IndigoPixel Productions</h1>
-</u>
-	
-	</center>
-
-<br>
-
-
-				<!--BIENVENIDA-->
-
- <p> Bienvenido a IndigoPixel Productions, tu fuente definitiva de información teórica y práctica para el desarrollo de flyers publicitarios. Explora nuestros contenidos cuidadosamente elaborados, donde encontrarás conceptos fundamentales, características clave y elementos gráficos esenciales para crear afiches que destaquen y cautiven a tu audiencia. Desde principiantes hasta profesionales del diseño, aquí encontrarás todo lo que necesitas para llevar tus ideas publicitarias al siguiente nivel.</p>
-
-
-	<!-- CARACTERÍSTICAS-->
-
-
-<h2>Características Destacadas</h2>
-
-<p>Descubre las características que hacen que nuestros recursos sean únicos.</p>
-
-<ul>
-	<li>Plantillas profesionales y personalizables para todos los estilos y necesidades</li> 
-	<li>Guías detalladas sobre principios de diseño y composición para maximizar el impacto visual.</li>
-  	<li>Biblioteca de imágenes de alta calidad y elementos gráficos para enriquecer tus diseños.</li>
-  	<li>Consejos expertos sobre tipografía, colores y técnicas de edición para perfeccionar cada detalle.</li>
-  	<li>Compatibilidad con las últimas tendencias y estándares del diseño publicitario.</li>
-</ul>
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
-
-		<!-- PREGUNTAS Y RESPUESTAS-->
-
-
-
-
-<H2> Preguntas frecuentes</h2>
- <u><h2 onclick="toggleFaq('faq1')">¿De qué tamaño deberían ser los flyers?</h2></u>
-<div id="faq1" class="faq-answer">
-    <p>En general, los flyers suelen tener un tamaño de 28 x 22 cm, que es el tamaño de una hoja de papel estándar. Pero también puedes elegir un formato más grande, como 28 x 43 cm, o uno más pequeño de 21.5 x 14 cm. Te recomendamos elegir el tamaño en función de la cantidad de texto en tu diseño y de cómo estés planeando distribuirlo.</p>
-</div>
-
-<u><h2 onclick="toggleFaq('faq2')">¿Qué se necesita para que un flyer sea efectivo?</h2></u>
-<div id="faq2" class="faq-answer">
-    <ul>
-        <li>Un titular llamativo</li>
-        <li>Un mensaje claro</li>
-        <li>Una fuente adecuada</li>
-        <li>Cierta jerarquía visual</li>
-        <li>Imágenes y espacio en blanco</li>
-        <li>Un llamado a la acción</li>
-    </ul>
-    <p>Y, sobre todas las cosas, debería tener un público objetivo definido. De esa forma, si lo ven las personas correctas, tu mensaje se va a difundir mucho más rápido y de forma orgánica.</p>
-</div>
-
-<u><h2 onclick="toggleFaq('faq3')">¿Qué debería incluir un flyer?</h2></u>
-<div id="faq3" class="faq-answer">
-    <p>Asegúrate de usar los colores y el logo de tu marca, imágenes e ilustraciones que llamen la atención, títulos atractivos y algo de texto para explicar tu mensaje. Puedes agregar información de contacto, como tu sitio web, correo electrónico y teléfono, o información importante, como fecha y hora de un evento.</p>
-</div>
-
-
-
-
-	<!-- CIERRE DE PRESENTACIÓN-->
-
-<br> 
-<p>Gracias por dar el primer paso para mejorar tus habilidades en el diseño de flyers publicitarios con IndigoPixel Productions. Nuestro compromiso es ser tu aliado en cada paso del proceso creativo. Estamos aquí para inspirarte, proporcionarte las herramientas adecuadas y ayudarte a alcanzar tus metas. ¡Empieza a explorar y descubre cómo podemos hacer que tus ideas cobren vida! </p>
-<br> 
-	<p style="text-align: center;">¡Bienvenido a un mundo de creatividad ilimitada con IndigoPixel Productions!</p>
-
-
-<br>
-
-<!-- Contenido del footer y links -->
-
-<footer id="footer" style="background-color: #000; color: #fff; padding: 10px;">
-  <div style="max-width: 800px; margin: auto; display: flex; justify-content: space-around;">
-    <div style="margin-bottom: 20px;">
-      <h3 style="text-align: center; cursor: pointer;" onclick="cargarContenido('politica_privacidad.html')">Política de privacidad</h3>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <h3 style="text-align: center; cursor: pointer;" onclick="cargarContenido('terminos_servicio.html')">Términos de servicio</h3>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <h3 style="text-align: center; cursor: pointer;" onclick="cargarContenido('contacto.html')">Contacto</h3>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <h3 style="text-align: center; cursor: pointer;" onclick="cargarContenido('soporte.html')">Soporte</h3>
-    </div>
-    <div style="margin-bottom: 20px;">
-      <h3 style="text-align: center; cursor: pointer;" onclick="cargarContenido('sobre_nosotros.html')">Sobre Nosotros</h3>
-    </div>
-  </div>
-  <div id="contenido" style="text-align: center; margin-top: 20px;"></div>
-  <p style="text-align: center; margin-top: 20px;">Derechos del autor © 2024. Todos los derechos reservados.</p>
-</footer>
-
-   <!-- <script>
-        function cargarContenido(archivo) {
-            fetch(archivo)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('contenido').innerHTML = data;
-                });
+    <script>
+        function toggleFaq(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
         }
-    </script> -->>
-
-
-
+    </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
