@@ -5,6 +5,14 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+				<!--PRESENTACIÓN-->
+
+	<center>	
+<u>
+		<h1>IndigoPixel Productions</h1>
+</u>
+	
+	</center>
 
 
 <script>
@@ -26,12 +34,45 @@
 	<!-- TÍTULO PÁGINA-->
 	
 <title> Recursos para Flyers </title>
+
+
+
+
+<div style="max-width: 800px; margin: auto;">
+    
+  
+ <!-- CONTENEDOR DE ENLACES CON FONDO NEGRO -->
+    <div style="background-color: #000; padding: 10px; border-radius: 5px;">
+        <!-- ENLACES CICLABLES -->
+        <div style="margin-bottom: 20px; display: flex; justify-content: space-around;">
+            <div>
+                <h3 style="text-align: center; color: #fff; cursor: pointer;" onclick="cargarContenido('teoria_conceptos.html')">Teoría y Conceptos</h3>
+            </div>
+            <div>
+                <h3 style="text-align: center; color: #fff; cursor: pointer;" onclick="cargarContenido('recursos_graficos.html')">Recursos Gráficos Descargables</h3>
+            </div>
+            <div>
+                <h3 style="text-align: center; color: #fff; cursor: pointer;" onclick="cargarContenido('ejemplos_flyers.html')">Ejemplos de Flyer</h3>
+            </div>
+            <div>
+                <h3 style="text-align: center; color: #fff; cursor: pointer;" onclick="cargarContenido('foro_comunidad.html')">Foro</h3>
+            </div>
+            <div>
+                <h3 style="text-align: center; color: #fff; cursor: pointer;" onclick="cargarContenido('tutoriales_videos.html')">Tutoriales</h3>
+            </div>
+        </div>
+    </div>
+
+
+
 </head>
+
+
 
 				<!--VIDEO EN LOOP-->
 <body> 
 <video autoplay muted loop style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1; opacity: 0.7;">
-  <source src="VIDEOFONDOTEST.mp4" type="video/mp4">
+  <source src="C:\Users\SEVEN\Desktop\HTML PRUEBA\VIDEOFONDOTEST.mp4" type="video/mp4">
   Tu navegador no soporta videos HTML5.
 </video>
 
@@ -39,29 +80,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<!--PRESENTACIÓN-->
-
-	<center>	
-<u>
-		<h1>IndigoPixel Productions</h1>
-</u>
-	
-	</center>
 
 <br>
 
@@ -89,15 +107,29 @@
 
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
 
+
+
+    <!-- IMAGENES -->
+    <div style="display: flex; align-items: center;">
+        <!-- Primera imagen -->
+        <img src="https://www.zarla.com/images/Zarla-how-to-make-a-logo-in-Photoshop-6000x3375-2021093.jpeg?crop=4:3,smart&width=1200&dpr=2" alt="" width="350" height="350" style="margin-right: 10px;" />
+
+        <!-- Salto de línea -->
+        <br>
+
+        <!-- Segunda imagen -->
+        <img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/photoshop-print-flyers?$pjpeg$&jpegSize=100&wid=519" alt="" width="350" height="350" style="margin-right: 10px;" />
+
+        <!-- Tercera imagen -->
+        <img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/print-options-for-flyers?$pjpeg$&jpegSize=200&wid=960" alt="" width="350" height="350" />
+    </div>
+
+    <!-- CONTENIDO DINÁMICO -->
+    <div id="contenido" style="text-align: center; margin-top: 20px;"></div>
+</div>
 
 
 
@@ -107,6 +139,8 @@
 
 
 
+<br>
+<br>
 
 <H2> Preguntas frecuentes</h2>
  <u><h2 onclick="toggleFaq('faq1')">¿De qué tamaño deberían ser los flyers?</h2></u>
@@ -177,7 +211,7 @@
                     document.getElementById('contenido').innerHTML = data;
                 });
         }
-    </script> -->>
+    </script> -->
 
 
 
